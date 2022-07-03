@@ -208,7 +208,7 @@ async def ban(ctx, member: discord.Member):
 async def help(ctx):
   if ctx.channel.id != 9966774179728879666 and ctx.channel.type != discord.ChannelType.private:
     embed = discord.Embed(title='Commands', description='.help\n.ban\n.kick\n\n `Anti Alt: 7 Days`\n `Anti Spam: 5 Messages`',color=color)
-    embed.set_thumbnail(url='https://cdn.discordapp.com/icons/951448195936944208/b2db0d023d49aa86835c12d49f0af70e.png?size=1024')
+    embed.set_thumbnail(url='https://media.discordapp.net/attachments/980872597778624623/993225096384761966/standard.gif')
     await ctx.send(embed=embed)
     help.reset_cooldown(ctx)
   elif ctx.channel.type == discord.ChannelType.private:
@@ -268,7 +268,7 @@ async def logintoken(ctx):
             a = await ctx.send('Server Invite: ')
             msg = await bot.wait_for('message',check = check, timeout = 60.0)
             queue.append(msg.content.split('/')[3])
-            await ctx.send('Joined Server with 1 T0ken')
+            await ctx.send('Joined Server with 1 T0ken' )
     except asyncio.TimeoutError: 
       print('b')
  
