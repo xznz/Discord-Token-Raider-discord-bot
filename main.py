@@ -229,7 +229,7 @@ async def help(ctx):
           embed.add_field(name='Reaction Adder',value='`.reactionadder [invite] [channel-id] [message-id] [emoji]`',inline=False)
           embed.add_field(name='Thread Spammer',value='`.threadspam [invite] [channel-id] [threadname]`',inline=False)
           embed.add_field(name='Retrieve Messages',value='`.retrievemessages [invite] [channel-id] [limit]`',inline=False)
-          embed.set_footer(text="ICE TOOLS", icon_url=BotUser.avatar_url)
+          embed.set_footer(text="AYU V2", icon_url=BotUser.avatar_url)
           await ctx.send(embed=embed)
   else:
     embed = discord.Embed(title='You have to do this in DMS!', description='This command must be done in DMS!',color=color)
